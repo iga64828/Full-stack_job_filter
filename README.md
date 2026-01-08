@@ -1,4 +1,4 @@
-# 一條龍篩選器 (Full-Stack Filter)
+# 一條龍篩選器 (Full-stack_job_filter)
 對我來說資料工程師就是搞etl pipeline\
 但是台灣一堆缺要一人兼 `DS`/`DA`/`DevOps`/`前端` 的一條龍服務\
 真正符合title的缺少之又少\
