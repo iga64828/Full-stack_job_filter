@@ -21,6 +21,10 @@ def scrape_job_detail(url):
 
         location_blocks = soup.select("div.basic-info__icon--location")
 
+        
+        # 因為地址在該網頁有兩個地區跟具體上班地點
+        # 剛好兩個div class一樣
+        # 所以要抓第二個
         if len(location_blocks) >= 2:
             address_tag = location_blocks[1].select_one("p.basic-info__address a")
             if address_tag:
