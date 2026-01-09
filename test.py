@@ -70,7 +70,7 @@ def scrape_job_detail(url):
         print(f"Error scraping {url}: {e}")
 
 def main():
-    keywords = ['資料工程師','數據工程師', 'data engineer']
+    keywords = ['資料工程師','數據工程師', 'Data Engineer']
     base_url = "https://www.yourator.co"
     
     headers = {
@@ -80,7 +80,7 @@ def main():
     for k in keywords:
         print(f"\n=== Fetching job list for keyword: {k} ===")
         # Using term[]={k} as per original logic
-        api_url = f"https://www.yourator.co/api/v4/jobs?term[]={k}"
+        api_url = f"https://www.yourator.co/api/v4/jobs?sort=most_related&term[]={k}"
         
         try:
             response = requests.get(api_url, headers=headers)
