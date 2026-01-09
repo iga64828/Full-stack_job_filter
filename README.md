@@ -8,7 +8,10 @@
 ## 需求 (Requirements)
 
 本專案旨在從就業網站定期抓取特定工作 title 資訊\
-來看哪些工作是內容與 title 相關的。
+來看哪些工作內容是真的如title所示。
+
+## 架構圖
+TBD
 
 ## 主要流程
 1. Call `yourator` API 抓取特定title的職缺
@@ -17,6 +20,8 @@
 
 
 TO-DO:
-- [] 寫一個config設定要抓的職缺
-- 寫test
-- 包成container 
+- [ ] 架構圖
+- [ ] 流程改成ELT
+- [ ] T的部分以LLM抓職缺內容關鍵字, summary等 
+- [ ] 寫test
+- [ ] 包成container 
